@@ -1,0 +1,28 @@
+import { Link } from "react-router-dom";
+import Navigation from "./navigation";
+
+export default function Home() {
+  return (
+    <div className="relative flex size-full min-h-screen flex-col bg-[#122118] dark justify-between group/design-root overflow-x-hidden">
+      <div>
+        <Link target="_blank" to={"https://github.com/kennycha"}>
+          <p className="text-gray-500 text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">
+            @kennycha
+          </p>
+        </Link>
+        <h2 className="text-white tracking-light text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5">
+          Is it in my GNEDBY?
+        </h2>
+        <p className="text-white text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">
+          No more duplicates
+        </p>
+      </div>
+      <div className="flex px-4 py-3 justify-center">
+        <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-[#38e07b] text-[#122118] gap-2 pl-5 text-base font-bold leading-normal tracking-[0.015em]">
+          <span className="truncate">Get Sample Search</span>
+        </button>
+      </div>
+      <Navigation />
+    </div>
+  );
+}
