@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
-import Navigation from "./navigation";
+import Navigation from "../components/navigation";
+import { useAuth } from "../store/auth-context";
 
 export default function Home() {
+  const { user } = useAuth();
+
   return (
     <div className="relative flex size-full min-h-screen flex-col bg-[#122118] dark justify-between group/design-root overflow-x-hidden">
       <div>
@@ -17,10 +20,14 @@ export default function Home() {
           No more duplicates
         </p>
       </div>
-      <div className="flex px-4 py-3 justify-center">
-        <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-[#38e07b] text-[#122118] gap-2 pl-5 text-base font-bold leading-normal tracking-[0.015em]">
-          <span className="truncate">Get Sample Search</span>
-        </button>
+      <div className="flex px-4 py-3 justify-center mb-10">
+        <Link to={user ? "/search" : "/sample-search"}>
+          <button className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-[#38e07b] text-[#122118] gap-2 pl-5 text-base font-bold leading-normal tracking-[0.015em]">
+            <span className="truncate">
+              {user ? "Start Searching" : "Try Sample Search"}
+            </span>
+          </button>
+        </Link>
       </div>
       <Navigation />
     </div>

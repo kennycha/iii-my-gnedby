@@ -1,10 +1,10 @@
-import type { SearchResult } from "../../types";
+import type { SearchResult } from "../types";
 
 type Props = {
   result: SearchResult;
 };
 
-export default function ResultItem({ result }: Props) {
+export default function SearchResultCard({ result }: Props) {
   const { similarity, title, artist, artworkUrl } = result;
 
   return (

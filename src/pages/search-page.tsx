@@ -1,9 +1,9 @@
 import { useState } from "react";
-import type { SearchResult } from "../../types";
-import Navigation from "../navigation";
-import Choose from "./choose";
-import Result from "./result";
-import Search from "./search";
+import ChooseImage from "../components/choose-image";
+import Navigation from "../components/navigation";
+import SearchImage from "../components/search-image";
+import ViewResult from "../components/view-result";
+import type { SearchResult } from "../types";
 
 export default function SearchPage() {
   const [step, setStep] = useState<"choose" | "search" | "result">("choose");
@@ -52,11 +52,11 @@ export default function SearchPage() {
             </div>
           </button>
         </div>
-        {step === "choose" && <Choose onChoose={handleChoose} />}
+        {step === "choose" && <ChooseImage onChoose={handleChoose} />}
         {step === "search" && selectedImage && (
-          <Search image={selectedImage} onSearch={handleSearch} />
+          <SearchImage image={selectedImage} onSearch={handleSearch} />
         )}
-        {step === "result" && result && <Result results={result} />}
+        {step === "result" && result && <ViewResult results={result} />}
         <Navigation />
       </div>
     </div>

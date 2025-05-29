@@ -1,9 +1,10 @@
 import { createHashRouter, Outlet } from "react-router-dom";
-import AuthPage from "./auth-page";
-import HomePage from "./home-page";
-import Layout from "./layout";
-import Private from "./private-route";
-import SearchPage from "./search-page";
+import Layout from "./components/layout";
+import Private from "./components/private-route";
+import AuthPage from "./pages/auth-page";
+import HomePage from "./pages/home-page";
+import SampleSearchPage from "./pages/sample-search-page";
+import SearchPage from "./pages/search-page";
 
 const router = createHashRouter([
   {
@@ -17,6 +18,10 @@ const router = createHashRouter([
       {
         path: "/",
         element: <HomePage />,
+      },
+      {
+        path: "/sample-search",
+        element: <SampleSearchPage />,
       },
       {
         path: "/auth",

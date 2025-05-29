@@ -1,14 +1,14 @@
-import { generateImageEmbedding } from "../../services/embed";
-import { searchSimilarAlbums } from "../../services/query";
-import { useModel } from "../../store/model-context";
-import type { SearchResult } from "../../types";
+import { generateImageEmbedding } from "../services/embed";
+import { searchSimilarAlbums } from "../services/query";
+import { useModel } from "../store/model-context";
+import type { SearchResult } from "../types";
 
 type Props = {
   image: string;
   onSearch: (results: SearchResult[]) => void;
 };
 
-export default function Search({ image, onSearch }: Props) {
+export default function SearchImage({ image, onSearch }: Props) {
   const { model } = useModel();
 
   const handleSearchButtonClick = async () => {

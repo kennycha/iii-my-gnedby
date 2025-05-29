@@ -1,11 +1,11 @@
-import type { SearchResult } from "../../types";
-import ResultItem from "./result-item";
+import type { SearchResult } from "../types";
+import SearchResultCard from "./search-result-card";
 
 type Props = {
   results: SearchResult[];
 };
 
-export default function Result({ results }: Props) {
+export default function ViewResult({ results }: Props) {
   return (
     <div className="relative flex flex-col bg-[#122118] dark justify-between group/design-root overflow-x-hidden">
       <div>
@@ -13,7 +13,7 @@ export default function Result({ results }: Props) {
           Top results
         </h2>
         {results.map((result) => (
-          <ResultItem key={result.id} result={result} />
+          <SearchResultCard key={result.id} result={result} />
         ))}
       </div>
     </div>

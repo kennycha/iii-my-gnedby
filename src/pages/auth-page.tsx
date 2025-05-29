@@ -1,7 +1,7 @@
 import { useState } from "react";
+import Navigation from "../components/navigation";
 import { signOut, singIn } from "../services/auth";
 import { useAuth } from "../store/auth-context";
-import Navigation from "./navigation";
 
 export default function AuthPage() {
   const { user } = useAuth();

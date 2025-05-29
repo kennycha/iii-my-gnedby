@@ -1,7 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
+import { useAuth } from "../store/auth-context";
 
 export default function Navigation() {
   const location = useLocation();
+  const { user } = useAuth();
 
   return (
     <div>
@@ -30,7 +32,7 @@ export default function Navigation() {
           </div>
         </Link>
         <Link
-          to="/search"
+          to={user ? "/search" : "/sample-search"}
           className={`just flex flex-1 flex-col items-center justify-end gap-1 ${
             location?.pathname === "/search" ? "text-white" : "text-[#96c5a9]"
           }`}

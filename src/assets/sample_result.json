@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "?",
+    "artist": "XXXTENTACION",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/f0/b0/21/f0b021d2-8bfb-e2ff-93f9-17c64147f971/18UMGIM14845.rgb.jpg/100x100bb.jpg",
+    "similarity": 0.6638998723275
+  },
+  {
+    "id": 28,
+    "title": "How Sweet - EP",
+    "artist": "NewJeans",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/bf/68/ca/bf68ca64-4acd-543f-bc78-455f11f06105/196922889738_Cover.jpg/100x100bb.jpg",
+    "similarity": 0.623127934661932
+  },
+  {
+    "id": 104,
+    "title": "The Marshall Mathers LP2",
+    "artist": "Eminem",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/fb/dd/5e/fbdd5e55-b41c-ba25-c84c-4f07dfdb82e7/00602537542697.rgb.jpg/100x100bb.jpg",
+    "similarity": 0.611458433050761
+  },
+  {
+    "id": 112,
+    "title": "Ready to Die (The Remaster)",
+    "artist": "The Notorious B.I.G.",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/50/5b/0e/505b0e6f-cb2d-df8f-58df-02a8d8e61c59/075679456762.jpg/100x100bb.jpg",
+    "similarity": 0.609854375217103
+  },
+  {
+    "id": 101,
+    "title": "Chet Baker Sings",
+    "artist": "Chet Baker",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d6/c7/a3/d6c7a3e9-f0b4-bdaf-89d4-5e5cb468f0c2/00602557056563.rgb.jpg/100x100bb.jpg",
+    "similarity": 0.592597977351695
+  },
+  {
+    "id": 77,
+    "title": "보고싶었어요",
+    "artist": "Jung Joonil",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b5/a0/39/b5a039b9-93b1-3c10-23e0-37c0fd82e075/8809419985296.jpg/100x100bb.jpg",
+    "similarity": 0.582369461325206
+  },
+  {
+    "id": 110,
+    "title": "The Infamous",
+    "artist": "Mobb Deep",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/b0/2f/97/b02f976b-be3c-8f63-491e-f6503aacde02/078636648026.jpg/100x100bb.jpg",
+    "similarity": 0.575516398133095
+  },
+  {
+    "id": 20,
+    "title": "Dog",
+    "artist": "Kim Ximya",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5f/22/36/5f2236d5-eef2-239d-da92-1417c0a01662/8804775154010.jpg/100x100bb.jpg",
+    "similarity": 0.56970639674234
+  },
+  {
+    "id": 31,
+    "title": "Trapstar Lifestyle",
+    "artist": "lobonabeat!",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/05/00/36/0500367e-1d49-25d9-95b4-153fe0bee7b0/Cover_lobonabeat_Trapstar_Lifestyle.jpg/100x100bb.jpg",
+    "similarity": 0.555309322811325
+  },
+  {
+    "id": 26,
+    "title": "NewJeans 1st EP 'New Jeans'",
+    "artist": "NewJeans",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4e/64/34/4e64344b-3ac6-c503-2c41-257a15401416/192641873096_Cover.jpg/100x100bb.jpg",
+    "similarity": 0.555280431008875
+  }
+]
