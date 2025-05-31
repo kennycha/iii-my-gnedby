@@ -12,5 +12,5 @@ export default function PrivateRoute({
     return <Navigate to="/" />;
   }
 
-  return <div>{children}</div>;
+  return <div className="h-full">{children}</div>;
 }

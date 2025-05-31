@@ -6,7 +6,7 @@ export default function Home() {
   const { user } = useAuth();
 
   return (
-    <div className="relative flex size-full min-h-screen flex-col bg-[#122118] dark justify-between group/design-root overflow-x-hidden">
+    <div className="relative flex size-full flex-col bg-[#122118] dark justify-between group/design-root overflow-x-hidden">
       <div>
         <Link target="_blank" to={"https://github.com/kennycha"}>
           <p className="text-gray-500 text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">

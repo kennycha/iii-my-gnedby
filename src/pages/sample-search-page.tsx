@@ -17,8 +17,8 @@ export default function SampleSearchPage() {
   };
 
   return (
-    <div className="h-screen overflow-y-auto">
-      <div className="relative flex h-screen flex-col bg-[#122118] dark justify-between group/design-root overflow-x-hidden">
+    <div className="h-full overflow-y-auto">
+      <div className="relative flex h-full flex-col bg-[#122118] dark justify-between group/design-root overflow-x-hidden">
         <div className="flex items-center bg-[#122118] p-4 pb-2 justify-end">
           <button
             className="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 bg-transparent text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"

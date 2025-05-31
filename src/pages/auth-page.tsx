@@ -27,26 +27,10 @@ export default function AuthPage() {
   };
 
   return (
-    <div className="relative flex size-full min-h-screen flex-col bg-[#141f18] dark justify-between group/design-root overflow-x-hidden">
+    <div className="relative flex size-full flex-col bg-[#141f18] dark justify-between group/design-root overflow-x-hidden">
       <div>
-        <div className="flex items-center bg-[#141f18] p-4 pb-2 justify-between">
-          <div
-            className="text-white flex size-12 shrink-0 items-center"
-            data-icon="ArrowLeft"
-            data-size="24px"
-            data-weight="regular"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24px"
-              height="24px"
-              fill="currentColor"
-              viewBox="0 0 256 256"
-            >
-              <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
-            </svg>
-          </div>
-          <h2 className="text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">
+        <div className="flex items-center bg-[#141f18] p-4 pb-2 justify-center h-[72px]">
+          <h2 className="text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">
             Login
           </h2>
         </div>
