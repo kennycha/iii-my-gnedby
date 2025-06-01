@@ -1,22 +1,21 @@
 import { Link } from "react-router-dom";
-import Navigation from "../components/navigation";
 import { useAuth } from "../store/auth-context";
 
 export default function Home() {
   const { user } = useAuth();
 
   return (
-    <div className="relative flex size-full flex-col bg-[#122118] dark justify-between group/design-root overflow-x-hidden">
+    <div className="flex size-full flex-col justify-between">
       <div>
         <Link target="_blank" to={"https://github.com/kennycha"}>
-          <p className="text-gray-500 text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">
+          <p className="text-gray-500 text-base font-normal leading-normal px-4 py-1 text-center">
             @kennycha
           </p>
         </Link>
-        <h2 className="text-white tracking-light text-[28px] font-bold leading-tight px-4 text-center pb-3 pt-5">
+        <h2 className="text-white tracking-light text-[28px] font-bold leading-tight px-4 py-2 text-center">
           Is it in my GNEDBY?
         </h2>
-        <p className="text-white text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">
+        <p className="text-white text-base font-normal leading-normal px-4 py-2 text-center">
           No more duplicates
         </p>
       </div>
@@ -29,7 +28,7 @@ export default function Home() {
           </button>
         </Link>
       </div>
-      <Navigation />
+      <div />
     </div>
   );
 }

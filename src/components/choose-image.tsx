@@ -15,8 +15,8 @@ export default function ChooseImage({ onChoose }: Props) {
   };
 
   return (
-    <div>
-      <p className="text-white text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">
+    <div className="flex flex-col size-full justify-center gap-4">
+      <p className="text-white text-base font-normal leading-normal px-4 py-2 text-center">
         Check the image you are unsure about
       </p>
       <div className="flex px-4 py-3 justify-center">

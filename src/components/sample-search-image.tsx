@@ -9,7 +9,7 @@ export default function SampleSearchImage({ src, onSearch }: Props) {
   };
 
   return (
-    <div>
+    <div className="flex flex-col size-full justify-center">
       <div className="flex justify-center px-4 py-2">
         <div className="w-48 h-48 rounded-md overflow-hidden border border-white/20">
           <img

@@ -78,7 +78,6 @@ export default function Navigation() {
           </div>
         </Link>
       </div>
-      <div className="h-5 bg-[#1b3124]"></div>
     </div>
   );
 }

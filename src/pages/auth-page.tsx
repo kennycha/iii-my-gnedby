@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Navigation from "../components/navigation";
 import { signOut, singIn } from "../services/auth";
 import { useAuth } from "../store/auth-context";
 
@@ -27,9 +26,9 @@ export default function AuthPage() {
   };
 
   return (
-    <div className="relative flex size-full flex-col bg-[#141f18] dark justify-between group/design-root overflow-x-hidden">
+    <div className="flex size-full flex-col justify-between">
       <div>
-        <div className="flex items-center bg-[#141f18] p-4 pb-2 justify-center h-[72px]">
+        <div className="flex items-center px-4 py-2 justify-center h-[72px]">
           <h2 className="text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">
             Login
           </h2>
@@ -37,7 +36,7 @@ export default function AuthPage() {
         {user ? (
           <>
             <div className="flex max-w-[480px] flex-wrap justify-center items-end gap-4 px-4 py-3">
-              <p className="text-white text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">
+              <p className="text-white text-base font-normal leading-normal px-4 py-1 text-center">
                 Logged in as {user.email}
               </p>
             </div>
@@ -85,7 +84,6 @@ export default function AuthPage() {
           </>
         )}
       </div>
-      <Navigation />
     </div>
   );
 }

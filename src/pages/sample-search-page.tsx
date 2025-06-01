@@ -1,6 +1,5 @@
 import { useState } from "react";
 import SampleImage from "../assets/sample_image.png";
-import Navigation from "../components/navigation";
 import SampleSearchImage from "../components/sample-search-image";
 import ViewResult from "../components/view-result";
 import { SAMPLE_RESULTS } from "../constants";
@@ -18,8 +17,8 @@ export default function SampleSearchPage() {
 
   return (
     <div className="h-full overflow-y-auto">
-      <div className="relative flex h-full flex-col bg-[#122118] dark justify-between group/design-root overflow-x-hidden">
-        <div className="flex items-center bg-[#122118] p-4 pb-2 justify-end">
+      <div className="flex h-full flex-col justify-between">
+        <div className="flex items-center px-4 py-2 justify-end">
           <button
             className="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 bg-transparent text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
             onClick={handleCancelButtonClick}
@@ -42,11 +41,12 @@ export default function SampleSearchPage() {
             </div>
           </button>
         </div>
-        {step === "search" && (
-          <SampleSearchImage src={SampleImage} onSearch={handleSearch} />
-        )}
-        {step === "result" && <ViewResult results={SAMPLE_RESULTS} />}
-        <Navigation />
+        <div className="flex-1 pb-10">
+          {step === "search" && (
+            <SampleSearchImage src={SampleImage} onSearch={handleSearch} />
+          )}
+          {step === "result" && <ViewResult results={SAMPLE_RESULTS} />}
+        </div>
       </div>
     </div>
   );

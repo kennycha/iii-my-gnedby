@@ -1,6 +1,5 @@
 import { useState } from "react";
 import ChooseImage from "../components/choose-image";
-import Navigation from "../components/navigation";
 import SearchImage from "../components/search-image";
 import ViewResult from "../components/view-result";
 import type { SearchResult } from "../types";
@@ -28,8 +27,8 @@ export default function SearchPage() {
 
   return (
     <div className="h-full overflow-y-auto">
-      <div className="relative flex h-full flex-col bg-[#122118] dark justify-between group/design-root overflow-x-hidden">
-        <div className="flex items-center bg-[#122118] p-4 pb-2 justify-end">
+      <div className="flex h-full flex-col justify-between">
+        <div className="flex items-center px-4 py-2 justify-end">
           <button
             className="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 bg-transparent text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
             onClick={handleCancelButtonClick}
@@ -52,12 +51,13 @@ export default function SearchPage() {
             </div>
           </button>
         </div>
-        {step === "choose" && <ChooseImage onChoose={handleChoose} />}
-        {step === "search" && selectedImage && (
-          <SearchImage image={selectedImage} onSearch={handleSearch} />
-        )}
-        {step === "result" && result && <ViewResult results={result} />}
-        <Navigation />
+        <div className="flex-1 pb-10">
+          {step === "choose" && <ChooseImage onChoose={handleChoose} />}
+          {step === "search" && selectedImage && (
+            <SearchImage image={selectedImage} onSearch={handleSearch} />
+          )}
+          {step === "result" && result && <ViewResult results={result} />}
+        </div>
       </div>
     </div>
   );

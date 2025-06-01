@@ -7,9 +7,9 @@ type Props = {
 
 export default function ViewResult({ results }: Props) {
   return (
-    <div className="relative flex flex-col bg-[#122118] dark justify-between group/design-root overflow-x-hidden">
+    <div className="relative flex flex-col dark justify-between group/design-root overflow-x-hidden">
       <div>
-        <h2 className="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+        <h2 className="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 py-2">
           Top results
         </h2>
         {results.map((result) => (
